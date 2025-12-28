@@ -137,30 +137,3 @@ tk.Button(unlock_window, text="Load Vault", command=load_vault_gui).grid(row=2, 
 tk.Button(unlock_window, text="Create Vault", command=create_vault_gui).grid(row=2, column=1, padx=5, pady=10)
 
 unlock_window.mainloop()
-#choice = input("Enter 'load' or 'create': ")
-#if choice == "load":
-#    vault_file = input("Vault filename: ")
-#    piss = input("Vault password: ")
-#    vault.load_vault(piss, vault_file)  # updates vault.data
-#elif choice == "create":
-#    vault_file = input("Vault filename: ")
-#    piss = input("Vault password: ")
-#    vault.save_vault(piss, vault_file)
-
-#while True:
-#    choice2 = input("'add', 'remove', 'show', 'save', 'quit': ")
-#    if choice2 == "add":
-#        url = input("URL: ")
-#        username = input("Username: ")
-#        password = input("Password: ")
-#        vault.add_entry(url, username, password)  # adds to vault.data
-#    elif choice2 == "remove":
-#        index = int(input("Index of entry to remove: ")) - 1
-#        vault.delete(index)
-#    elif choice2 == "show":
-#        vault.show_vault()  # shows vault.data
-#    elif choice2 == "save":
-#        vault.save_vault(piss, vault_file)  # saves vault.data
-#        print("Vault saved.")
-#    elif choice2 == "quit":
-#        break
